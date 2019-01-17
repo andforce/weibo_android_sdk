@@ -8,7 +8,7 @@ import android.widget.CompoundButton;
 
 import com.sina.weibo.sdk.R;
 import com.sina.weibo.sdk.auth.AuthInfo;
-import com.sina.weibo.sdk.web.WeiboPageUtils;
+//import com.sina.weibo.sdk.web.WeiboPageUtils;
 
 /**
  * Created by xuesong6 on 2017/2/28.
@@ -26,75 +26,75 @@ public class WeiboPageActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weibo_page);
         authInfo = new AuthInfo(this,Constants.APP_KEY,Constants.REDIRECT_URL,Constants.SCOPE);
-        //打开指定的微博个人主页
-        findViewById(R.id.userinfo).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startUserMainPage(uid,useWeb);
-            }
-        });
-
-        //打开指定的微博详情
-        findViewById(R.id.detail).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startWeiboDetailPage(mblogid,uid,useWeb);
-            }
-        });
-
-        //打开指定的微博头条文章
-        findViewById(R.id.article).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startWeiboTopPage(articleId,useWeb);
-            }
-        });
-
-        //分享到微博（只能分享文字内容）
-        findViewById(R.id.sendweibo).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).shareToWeibo("哈哈哈哈哈",useWeb);
-            }
-        });
-
-        //评论指定微博
-        findViewById(R.id.comment).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).commentWeibo("4133710346914136",useWeb);
-            }
-        });
-
-        //连接到微博搜索内容流
-        findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).openWeiboSearchPage("周杰伦",useWeb);
-            }
-        });
-
-        //连接到我的微博消息流
-        findViewById(R.id.gotohome).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).gotoMyHomePage(useWeb);
-            }
-        });
-
-        //连接到我的微博个人主页
-        findViewById(R.id.myprofile).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).gotoMyProfile(useWeb);
-            }
-        });
-        findViewById(R.id.test).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startOtherPage("https://www.baidu.com?",null);
-            }
-        });
+//        //打开指定的微博个人主页
+//        findViewById(R.id.userinfo).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startUserMainPage(uid,useWeb);
+//            }
+//        });
+//
+//        //打开指定的微博详情
+//        findViewById(R.id.detail).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startWeiboDetailPage(mblogid,uid,useWeb);
+//            }
+//        });
+//
+//        //打开指定的微博头条文章
+//        findViewById(R.id.article).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startWeiboTopPage(articleId,useWeb);
+//            }
+//        });
+//
+//        //分享到微博（只能分享文字内容）
+//        findViewById(R.id.sendweibo).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).shareToWeibo("哈哈哈哈哈",useWeb);
+//            }
+//        });
+//
+//        //评论指定微博
+//        findViewById(R.id.comment).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).commentWeibo("4133710346914136",useWeb);
+//            }
+//        });
+//
+//        //连接到微博搜索内容流
+//        findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).openWeiboSearchPage("周杰伦",useWeb);
+//            }
+//        });
+//
+//        //连接到我的微博消息流
+//        findViewById(R.id.gotohome).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).gotoMyHomePage(useWeb);
+//            }
+//        });
+//
+//        //连接到我的微博个人主页
+//        findViewById(R.id.myprofile).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).gotoMyProfile(useWeb);
+//            }
+//        });
+//        findViewById(R.id.test).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                WeiboPageUtils.getInstance(WeiboPageActivity.this,authInfo).startOtherPage("https://www.baidu.com?",null);
+//            }
+//        });
         CheckBox checkBox = (CheckBox)findViewById(R.id.web_switch);
         checkBox.setChecked(useWeb);
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
