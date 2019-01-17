@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DevTools</string>
+
+    <string name="hint_s">点击Item获取详细信息(MD5签名等)</string>
+    <string name="md5_hint_s">APP_MD5</string>
+    <string name="sha1_hint_s">SHA1</string>
+    <string name="sha256_hint_s">SHA256</string>
+    <string name="effective_hint_s">有效时间</string>
+    <string name="iseffective_hint_s">签名是否过期</string>
+    <string name="overdue_hint_s">已过期</string>
+    <string name="notoverdue_hint_s">未过期</string>
+    <string name="principal_hint_s">证书发布方</string>
+    <string name="version_hint_s">证书版本号</string>
+    <string name="sigalgname_hint_s">证书算法名称</string>
+    <string name="sigalgoid_hint_s">证书算法OID</string>
+    <string name="dercode_hint_s">证书DER编码</string>
+    <string name="serialnumber_hint_s">证书机器码</string>
+</resources>
